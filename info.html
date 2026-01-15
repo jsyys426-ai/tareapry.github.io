@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información - Normas APA 7ma Edición</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .banner {
+            background: linear-gradient(90deg, #f093fb, #f5576c, #f093fb);
+            background-size: 200% 100%;
+            padding: 60px 20px;
+            text-align: center;
+            animation: gradientMove 5s ease infinite;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        @keyframes gradientMove {
+            0%, 100% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+
+        .banner h1 {
+            color: white;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            animation: slideDown 1s ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .banner p {
+            color: white;
+            font-size: 1.3em;
+            margin-top: 10px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .content-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h2 {
+            color: #667eea;
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-left: 5px solid #f5576c;
+            padding-left: 15px;
+        }
+
+        h3 {
+            color: #764ba2;
+            font-size: 1.5em;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #333;
+            line-height: 1.8;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            margin: 30px 0;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            border-left: 5px solid #667eea;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .info-item {
+            background: linear-gradient(135deg, #f093fb15 0%, #f5576c15 100%);
+            padding: 25px;
+            border-radius: 15px;
+            border: 2px solid #f093fb;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .info-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(240, 147, 251, 0.3);
+        }
+
+        .info-item h4 {
+            color: #f5576c;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        nav {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #667eea;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: all 0.3s;
+        }
+
+        nav a:hover {
+            background: #667eea;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <h1>📖 Normas APA 7ma Edición</h1>
+        <p>Guía Completa para Investigación Académica</p>
+    </div>
+
+    <div class="container">
+        <div class="content-card">
+            <h2>¿Qué son las Normas APA?</h2>
+            
+            <p>El investigador define las Normas APA como un conjunto de estándares establecidos por la American Psychological Association para la presentación de trabajos escritos en el ámbito académico y científico. La 7ma edición representa la actualización más reciente de estos lineamientos, incorporando cambios significativos en la citación y formato de documentos.</p>
+
+           
+            <h3>Importancia en el Ámbito Académico</h3>
+            <p>El autor señala que las Normas APA facilitan la comunicación científica al establecer un formato estandarizado que permite a los lectores identificar rápidamente las fuentes utilizadas en un trabajo de investigación. Esta uniformidad resulta esencial para mantener la integridad académica y evitar el plagio.</p>
+
+            <div class="highlight-box">
+                <p><strong>El especialista enfatiza:</strong> La aplicación correcta de las Normas APA no solo es un requisito académico, sino una herramienta fundamental para desarrollar habilidades de investigación rigurosa y ética profesional.</p>
+            </div>
+
+            <h3>Elementos Principales de las Normas APA 7ma Edición</h3>
+            
+            <div class="info-grid">
+                <div class="info-item">
+                    <h4>📄 Formato del Documento</h4>
+                    <p>El manual establece que se debe utilizar fuente Times New Roman 12 pts, doble espacio, márgenes de 2.54 cm y alineación a la izquierda.</p>
+                </div>
+
+                <div class="info-item">
+                    <h4>📝 Citas en el Texto</h4>
+                    <p>El investigador distingue entre citas textuales y paráfrasis, ambas requiriendo la inclusión del apellido del autor y el año de publicación.</p>
+                </div>
+
+                <div class="info-item">
+                    <h4>📚 Lista de Referencias</h4>
+                    <p>El documento especifica que todas las fuentes citadas deben aparecer en orden alfabético al final del trabajo, siguiendo formatos específicos según el tipo de fuente.</p>
+                </div>
+
+                <div class="info-item">
+                    <h4>🔢 Estructura del Trabajo</h4>
+                    <p>El autor detalla que un trabajo APA incluye portada, resumen, cuerpo del texto, referencias y apéndices cuando sea necesario.</p>
+                </div>
+            </div>
+
+            <h3>Novedades de la 7ma Edición</h3>
+            <p>El experto identifica varios cambios importantes respecto a ediciones anteriores. Se simplificó el formato de citas con múltiples autores, se actualizaron las pautas para recursos digitales y se incorporaron nuevas directrices para la inclusión de lenguaje no discriminatorio.</p>
+
+            <p>La séptima edición también introduce mayor flexibilidad en el uso de tipografías, permitiendo alternativas como Calibri, Arial o Lucida Sans Unicode en tamaño 11 pts, mientras mantiene Times New Roman como estándar principal.</p>
+
+            <div class="highlight-box">
+                <p><strong>El investigador concluye:</strong> La comprensión y aplicación adecuada de las Normas APA 7ma Edición constituye una competencia fundamental para estudiantes de bachillerato que se preparan para la educación superior, donde estos estándares son requisito obligatorio en la mayoría de instituciones académicas.</p>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <a href="index.html">🏠 Inicio</a>
+        <a href="juegos.html">🎮 Juegos</a>
+        <a href="recursos.html">📁 Recursos</a>
+        <a href="final.html">Final</a>
+    </nav>
+</body>
+</html>

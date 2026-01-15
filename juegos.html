@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juegos Educativos - Normas APA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 15px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .header p {
+            font-size: 1.3em;
+            background: rgba(255, 255, 255, 0.2);
+            display: inline-block;
+            padding: 10px 30px;
+            border-radius: 25px;
+            backdrop-filter: blur(10px);
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .intro-text {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .intro-text h2 {
+            color: #4facfe;
+            margin-bottom: 15px;
+            font-size: 2em;
+        }
+
+        .intro-text p {
+            color: #333;
+            line-height: 1.8;
+            font-size: 1.1em;
+        }
+
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .game-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            animation: fadeInScale 1s ease-out;
+        }
+
+        @keyframes fadeInScale {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .game-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .game-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .game-icon {
+            font-size: 3em;
+            margin-right: 15px;
+        }
+
+        .game-title {
+            flex: 1;
+        }
+
+        .game-title h3 {
+            color: #4facfe;
+            font-size: 1.8em;
+            margin-bottom: 5px;
+        }
+
+        .game-title p {
+            color: #666;
+            font-size: 1em;
+        }
+
+        .game-frame {
+            width: 100%;
+            height: 500px;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+            display: flex;
+            gap: 15px;
+            z-index: 1000;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #4facfe;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: all 0.3s;
+        }
+
+        nav a:hover {
+            background: #4facfe;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .games-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .game-frame {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🎮 Zona de Juegos Educativos</h1>
+        <p>Aprende Normas APA de forma interactiva</p>
+    </div>
+
+    <div class="container">
+        <div class="intro-text">
+            <h2>Aprendizaje Gamificado</h2>
+            <p>El docente ha diseñado esta sección interactiva para reforzar los conocimientos adquiridos sobre las Normas APA 7ma Edición mediante actividades lúdicas. Los juegos educativos presentados a continuación permiten al estudiante evaluar su comprensión del material de manera dinámica y entretenida.</p>
+            <p>El investigador señala que la gamificación educativa mejora significativamente la retención de información y el compromiso del estudiante con el contenido académico.</p>
+        </div>
+
+        <div class="games-grid">
+            <div class="game-card">
+                <div class="game-header">
+                    <div class="game-icon">🧩</div>
+                    <div class="game-title">
+                        <h3>Juego 1: Test de Conocimientos</h3>
+                        <p>El evaluador presenta preguntas de opción múltiple sobre conceptos clave</p>
+                    </div>
+                </div>
+                <iframe class="game-frame" src="https://es.educaplay.com/recursos-educativos/27369607-busqueda_de_normas_apa_7_edicion.html" allowfullscreen></iframe>
+            </div>
+
+            <div class="game-card">
+                <div class="game-header">
+                    <div class="game-icon">🎯</div>
+                    <div class="game-title">
+                        <h3>Juego 2: Crucigrama APA</h3>
+                        <p>El pedagogo propone un desafío de palabras cruzadas temáticas</p>
+                    </div>
+                </div>
+                <iframe class="game-frame" src="https://es.educaplay.com/recursos-educativos/27369624-apa_7ma_edicion_quiz.html" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="intro-text">
+            <h2>Instrucciones de Uso</h2>
+            <p>El autor recomienda completar ambos juegos en orden para maximizar el aprendizaje. Cada actividad está diseñada para evaluar diferentes aspectos del conocimiento sobre las Normas APA. El sistema registra automáticamente el progreso del estudiante y proporciona retroalimentación inmediata.</p>
+            <p><strong>El facilitador sugiere:</strong> Dedicar al menos 15 minutos a cada actividad para obtener resultados óptimos en el proceso de aprendizaje.</p>
+        </div>
+    </div>
+
+    <nav>
+        <a href="index.html">🏠 Inicio</a>
+        <a href="info.html">📖 Info</a>
+        <a href="recursos.html">📁 Recursos</a>
+        <a href="final.html">Final</a>
+    </nav>
+</body>
+</html>

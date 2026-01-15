@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos Educativos - Normas APA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+            animation: bounceIn 1s ease-out;
+        }
+
+        @keyframes bounceIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.3);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 15px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .comparison-section {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            animation: slideInLeft 1s ease-out;
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .comparison-section h2 {
+            color: #fa709a;
+            font-size: 2.2em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .comparison-table thead {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            color: white;
+        }
+
+        .comparison-table th {
+            padding: 20px;
+            font-size: 1.2em;
+            text-align: left;
+        }
+
+        .comparison-table td {
+            padding: 18px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .comparison-table tbody tr {
+            transition: background 0.3s;
+        }
+
+        .comparison-table tbody tr:hover {
+            background: #fff5f7;
+        }
+
+        .comparison-table tbody tr:nth-child(even) {
+            background: #fafafa;
+        }
+
+        .gallery-section {
+            margin-bottom: 40px;
+        }
+
+        .gallery-section h2 {
+            color: white;
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .gallery-item {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4em;
+        }
+
+        .gallery-content {
+            padding: 20px;
+        }
+
+        .gallery-content h3 {
+            color: #fa709a;
+            margin-bottom: 10px;
+            font-size: 1.4em;
+        }
+
+        .gallery-content p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .tips-section {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            animation: slideInRight 1s ease-out;
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .tips-section h2 {
+            color: #fa709a;
+            font-size: 2.2em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .tip-item {
+            background: linear-gradient(135deg, #fa709a15 0%, #fee14015 100%);
+            padding: 20px;
+            margin: 15px 0;
+            border-left: 5px solid #fa709a;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .tip-item:hover {
+            transform: translateX(10px);
+        }
+
+        .tip-item h4 {
+            color: #fa709a;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+
+        .tip-item p {
+            color: #333;
+            line-height: 1.7;
+        }
+
+        nav {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+            display: flex;
+            gap: 15px;
+            z-index: 1000;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fa709a;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: all 0.3s;
+        }
+
+        nav a:hover {
+            background: #fa709a;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📁 Recursos Complementarios</h1>
+    </div>
+
+    <div class="container">
+        <div class="comparison-section">
+            <h2>Cuadro Comparativo: APA 6ta vs 7ma Edición</h2>
+            <p style="color: #555; margin-bottom: 20px; text-align: center; font-size: 1.1em;">El investigador presenta las diferencias fundamentales entre ambas ediciones del manual.</p>
+            
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Aspecto</th>
+                        <th>APA 6ta Edición</th>
+                        <th>APA 7ma Edición</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Citas con múltiples autores</strong></td>
+                        <td>Se utilizaba "et al." a partir de seis autores</td>
+                        <td>El autor señala que ahora se usa "et al." desde tres autores</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ubicación del DOI</strong></td>
+                        <td>Se presentaba como "doi: 10.xxxx/xxxx"</td>
+                        <td>El manual indica que ahora se presenta como URL: "https://doi.org/10.xxxx/xxxx"</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tipografías permitidas</strong></td>
+                        <td>Principalmente Times New Roman 12 pts</td>
+                        <td>El documento especifica múltiples opciones: Times New Roman, Calibri, Arial, Lucida Sans Unicode</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Encabezado de página</strong></td>
+                        <td>Requería "Running head" en todas las páginas</td>
+                        <td>El experto establece que solo se incluye en la portada</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Recursos electrónicos</strong></td>
+                        <td>Se incluía "Recuperado de"</td>
+                        <td>El manual elimina esta frase para la mayoría de recursos en línea</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="gallery-section">
+            <h2>🖼️ Galería de Elementos Clave</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-img">📝</div>
+                    <div class="gallery-content">
+                        <h3>Formato de Portada</h3>
+                        <p>El autor describe que la portada debe incluir título del trabajo, nombre del estudiante, afiliación institucional, nombre del curso, instructor y fecha de entrega, todos centrados y en doble espacio.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-img">📖</div>
+                    <div class="gallery-content">
+                        <h3>Citas Textuales</h3>
+                        <p>El investigador establece que las citas menores a 40 palabras van entre comillas en el texto, mientras que las mayores se presentan en bloque independiente con sangría de 1.27 cm.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-img">🔗</div>
+                    <div class="gallery-content">
+                        <h3>Referencias Digitales</h3>
+                        <p>El experto señala que las referencias de sitios web deben incluir autor, fecha, título del documento, nombre del sitio y URL completa sin punto final.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-img">📊</div>
+                    <div class="gallery-content">
+                        <h3>Tablas y Figuras</h3>
+                        <p>El manual especifica que las tablas se numeran consecutivamente y se titulan en la parte superior, mientras que las figuras se titulan en la parte inferior.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-img">✍️</div>
+                    <div class="gallery-content">
+                        <h3>Paráfrasis</h3>
+                        <p>El autor enfatiza que parafrasear requiere reformular las ideas con palabras propias, manteniendo siempre la cita del autor original y el año de publicación.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-img">📑</div>
+                    <div class="gallery-content">
+                        <h3>Lista de Referencias</h3>
+                        <p>El investigador determina que las referencias deben organizarse alfabéticamente, con sangría francesa de 1.27 cm a partir de la segunda línea de cada entrada.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tips-section">
+            <h2>💡 Consejos Prácticos del Experto</h2>
+            
+            <div class="tip-item">
+                <h4>1. Organización Anticipada</h4>
+                <p>El especialista recomienda documentar las fuentes desde el inicio de la investigación para evitar olvidos y facilitar la elaboración posterior de la lista de referencias.</p>
+            </div>
+
+            <div class="tip-item">
+                <h4>2. Uso de Gestores Bibliográficos</h4>
+                <p>El autor sugiere utilizar herramientas como Zotero, Mendeley o EndNote para gestionar automáticamente las referencias y generar citas en formato APA de manera eficiente.</p>
+            </div>
+
+            <div class="tip-item">
+                <h4>3. Revisión de Formato</h4>
+                <p>El investigador aconseja revisar cuidadosamente márgenes, espaciado y tipografía antes de entregar el trabajo, ya que estos detalles forman parte de la evaluación académica.</p>
+            </div>
+
+            <div class="tip-item">
+                <h4>4. Consulta Constante del Manual</h4>
+                <p>El experto indica que ante cualquier duda específica, es fundamental consultar directamente el manual oficial de la 7ma edición para garantizar la precisión en la aplicación de las normas.</p>
+            </div>
+
+            <div class="tip-item">
+                <h4>5. Práctica Continua</h4>
+                <p>El docente enfatiza que la competencia en el uso de Normas APA se desarrolla mediante la práctica constante, por lo que recomienda aplicarlas en todos los trabajos académicos posibles.</p>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <a href="index.html">🏠 Inicio</a>
+        <a href="info.html">📖 Info</a>
+        <a href="juegos.html">🎮 Juegos</a>
+        <a href="final.html">✨ Final</a>
+    </nav>
+</body>
+</html>
